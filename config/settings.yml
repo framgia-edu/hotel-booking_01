@@ -1,0 +1,54 @@
+user:
+  user_name:
+    case_sensitive: true
+    max_length: 50
+  email:
+    max_length: 100
+    case_sensitive: true
+  password:
+    min_length: 6
+  name:
+    max_length: 50
+  phone:
+    max_length: 13
+bill:
+  customer_name:
+    max_length: 50
+  customer_phone:
+    max_length: 13
+  customer_email:
+    max_length: 100
+category:
+  name:
+    max_length: 50
+contact:
+  phone:
+    max_length: 13
+  email:
+    max_length: 100
+  name:
+    max_length: 50
+  address:
+    max_length: 200
+hotel:
+  name:
+    max_length: 50
+  address:
+    max_length: 200
+  phone:
+    max_length: 13
+  email:
+    max_length: 50
+image:
+  name:
+    max_length: 50
+post:
+  title:
+    max_length: 100
+room_type_service:
+  name:
+    max_length: 50
+room_detail:
+  arceage:
+    min_length: 0
+
