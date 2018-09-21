@@ -1,33 +1,45 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  title_about: "About"
+  title_help: "Help"
+  title_contact: "Contact"
+  helpers:
+    application_helper:
+      text: "Book Hotel"
+  layouts:
+    header:
+      hotel: "Khách sạn"
+      about: "Tin tức"
+      help: "Hỗ trợ"
+      contact: "liên hệ"
+      login: "Đăng nhập"
+      logout: "Đăng xuất"
+      sign_up: "Đăng kí"
+    footer:
+      text: "Về Booking Hotel"
+      book: "Cách đặt phòng"
+      contact_us: "Liên hệ với chúng tôi"
+      help: "Trợ giúp"
+      recruitment: Tuyển dụng
+      contact: "Liên hệ"
+      company: "Công ty TNHH Framgia Việt Nam"
+      address_company: "Văn phòng: Tầng 9, Tòa nhà Nissan, 433 Trần Khát Chân, Hai Bà Trưng, Hà Nội"
+      hot_line: "Hotline: 01662793080"
+      phone: "Điện thoại: 01662793080"
+      email: "Email: lyvanminh1001@gmail.com"
+      default: "Khác"
+      blog: "Booking hotel Blog"
+      sign_promotion: "Đăng kí thông tin khuyến mãi"
+      policy: "Chính sách quyền riêng tư"
+      acount: "Tài khoản và điều kiện"
+      sign_hotel: "Đăng kí khách sạn của bạn"
+      social: "Social"
+  static_pages:
+    home:
+      text: "Booking hotel"
+      introduce_first: "Không chỉ là một website đặt phòng thông thường mà chúng tôi đang cung cấp và hỗ trợ cho bạn một giải pháp."
+      introduce_second: "Lựa chọn những khách sạn phù hợp nhất với chuyến đi của bạn."
+      input_hotel: "Nhập khách sạn hoặc địa chỉ đến"
+      received_date: "Ngày nhận"
+      pay_day: "Ngày trả"
+      get_location: "Lấy Vị trí"
+      search: "TÌm Kiếm"
