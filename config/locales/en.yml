@@ -6,6 +6,15 @@ en:
     application_helper:
       text: "Book Hotel"
   layouts:
+    admin:
+      nav:
+        title: "Hotel Manager v1.0"
+        dashboard: "Dashboard"
+        placeholder_search: "Search..."
+        profile: "Profile"
+        settings: "Settings"
+        logout: "Logout"
+        toggle_navigation: "Toggle navigation"
     header:
       hotel: "Khách sạn"
       about: "Tin tức"
