@@ -1,7 +1,4 @@
 en:
-  title_about: "About"
-  title_help: "Help"
-  title_contact: "Contact"
   helpers:
     application_helper:
       text: "Book Hotel"
@@ -21,8 +18,11 @@ en:
       help: "Hỗ trợ"
       contact: "liên hệ"
       login: "Đăng nhập"
-      logout: "Đăng xuất"
       sign_up: "Đăng kí"
+      head_acount: "Tài khoản"
+      head_profile: "Thông tin cá nhân"
+      head_setting: "Chỉnh sửa"
+      head_logout: "Đăng xuất"
     footer:
       text: "Về Booking Hotel"
       book: "Cách đặt phòng"
@@ -52,3 +52,33 @@ en:
       pay_day: "Ngày trả"
       get_location: "Lấy Vị trí"
       search: "TÌm Kiếm"
+    about:
+      title: "Tin tức"
+    contact:
+      title: "Liên hệ"
+    help:
+      title: "Hỗ trợ"
+  users:
+    new:
+      title: "Đăng kí"
+      sign_up: "Đăng kí"
+      confirmation: "Confirmation"
+      create_account: "Đăng kí tài khoản"
+    create:
+      create_success: "Đăng kí thành công"
+    edit:
+      title: "Chỉnh sửa hồ sơ"
+      save_change: "Lưu thay đổi"
+  sessions:
+    new:
+      title: "Đăng nhập"
+      enter_email: "Nhập email đăng nhập"
+      enter_password: "Nhập mật khẩu"
+      remember_login: "Ghi nhớ đăng nhập"
+      login: "Đăng nhập"
+      register_now: "Bạn không có tài khoản? Đăng kí ngay"
+  controllers:
+    users_controller:
+      create_success: "Đăng kí thành công"
+      create_false: "Đăng kí thất bại"
+      don't_find: "không tìm thấy"
