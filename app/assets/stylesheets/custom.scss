@@ -152,3 +152,183 @@ header{
   top: 0;
   position: relative;
 }
+
+.title{
+  background-color: rgb(245, 245, 245);
+  height: 50px;
+  width: auto;
+  box-shadow: 1px 1px 1px 1px rgba(50,50,50,0.2);
+  margin-top: 5px;
+}
+h1.col-md-9.titlepage{
+  font-size: 28px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+
+}
+ol.col-md-3.breadcrumb{
+  margin-top: 5px;
+  background-color: rgb(245, 245, 245);
+  padding-right: 0px;
+}
+ol.col-md-3.breadcrumb li a{
+  text-decoration: none;
+  color: black;
+}
+#contact-lienhe{
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+.col-md-9.form-contact h2{
+  font-size: 24px;
+  margin-left: 12px;
+}
+.text{
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.text b{
+  color: red;
+}
+.btn{
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  cursor: pointer;
+}
+
+
+.lienhe {background-color: $orange;}
+.lienhe:hover {background: $orange;}
+.btn.lienhe span{
+  font-weight: bold;
+}
+.col-md-3.contact-gioithieu ul li{
+  line-height: 1.9em;
+}
+
+/*end trang lien he*/
+
+/*tin tuc*/
+.content-news{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.post{
+  padding-bottom: 50px;
+  border-bottom: 2px solid rgb(247, 243, 243);
+  margin-bottom: 40px;
+}
+.post-title h2{
+  margin-top: 3px;
+}
+.post-title h2 a{
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $dark;
+  text-decoration: none;
+}
+.post-title h2 a:hover{
+  color: rgb(26, 188, 156);
+}
+ul.post-date{
+  margin-bottom: 40px;
+}
+ul.post-date li{
+  display: inline-block;
+  color: rgb(153, 153, 153);
+  font-style: italic;
+  font-size: 12px;
+  margin-right: 3px;
+}
+ul.post-date li a{
+  text-decoration: none;
+  font-style: italic;
+  color: $orange-low;
+}
+.post-content p{
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+.more-link{
+  color: $orange-low;
+  font-style: italic;
+  text-decoration: underline;
+}
+.news-category{
+  border-bottom: 1px solid rgb(238, 238, 238);
+  margin-bottom: 50px;
+}
+.news-category h4{
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+}
+.news-category ul{
+  margin-left: 15px;
+  margin-top: 35px;
+  margin-bottom: 45px;
+}
+.news-category ul li a{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+.img-circle-custom{
+  width: 48px;
+  height: 48px;
+}
+.news-new h4{
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.entry-image{
+  float: left;
+  margin-right: 10px;
+}
+.entry-title h4 a{
+  color: rgb(0, 0, 0);
+  font-weight: normal;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: none;
+  line-height: 1.6em;
+}
+
+ul.entry-meta li{
+  list-style-type: none;
+  font-style: italic;
+  font-size: 12px;
+  margin-left: 60px;
+  color: rgb(153, 153, 153);
+}
+.list-news{
+  border-bottom: 1px dashed rgb(229, 229, 229);
+}
+.entry-content.notopmargin{
+  border-bottom: 2px solid rgb(229, 229, 229);
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+}
+.post-title-lq h2 a{
+  color: $orange-low;
+  font-size: 20px;
+  line-height: 1em;
+  text-decoration: none;
+}
+.col-md-6.news-lienquan{
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px dashed rgb(223, 221, 221);
+}
+
+.content-news{
+  margin: auto;
+}
+.post-image{
+  margin: 10px 0 10px
+}
