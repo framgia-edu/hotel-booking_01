@@ -54,8 +54,24 @@ en:
       search: "TÌm Kiếm"
     about:
       title: "Tin tức"
-    contact:
+      title_news1: "Điểm danh những khách sạn chất nhất năm châu"
+      title_news2: "Lạ lùng những khách sạn vô là khỏe"
+      title_news3: "Đến 11 khách sạn dưới nước này rồi, bạn sẽ không muốn về nhà nữa"
+      contact:
       title: "Liên hệ"
+      write_comment: "Viết nhận xét"
+      text_name: "Họ tên"
+      text_address: "Địa chỉ"
+      text_email: "Email"
+      text_phone: "Số điện thoại"
+      text_title: "Tiêu đề"
+      text_comment: "Nhận xét"
+      btn_send: "GỬI LIÊN HỆ"
+      input_name: "Nhập Họ Tên"
+      input_address: "Nhập Địa chỉ"
+      input_email: "Nhập email"
+      input_phone: "Nhập số điện thoại"
+      input_title: "Nhập tiêu đề"
     help:
       title: "Hỗ trợ"
   users:

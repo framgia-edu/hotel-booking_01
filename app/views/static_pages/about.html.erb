@@ -1,1 +1,35 @@
 <% provide :title, t(".title") %>
+
+<div class="tintuc-content">
+  <div class="content-news">
+    <div class="container">
+      <h1 class="titlepage"><%= t ".title" %></h1>
+      <div class="new-title">
+        <div class="post">
+          <div class="post-image">
+            <%= link_to image_tag("news1.jpg"), "#" %>
+          </div>
+          <div class="post-title">
+            <h4><%= link_to t(".title_news1"), "#" %></h4>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post-image">
+            <%= link_to image_tag("news2.jpg"), "#" %>
+          </div>
+          <div class="post-title">
+            <h4><%= link_to t(".title_news2"), "#" %></h4>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post-image">
+            <%= link_to image_tag("news3.jpg"), "#" %>
+          </div>
+          <div class="post-title">
+            <h4><%= link_to t(".title_news3"), "#" %></a></h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
