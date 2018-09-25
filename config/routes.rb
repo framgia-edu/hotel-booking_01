@@ -12,5 +12,6 @@ Rails.application.routes.draw do
 
   namespace :admin do
     resources :hotels
+    resources :images, only: :destroy
   end
 end

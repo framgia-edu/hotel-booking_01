@@ -61,4 +61,4 @@ layouts:
     help: "http://localhost:3000/help"
 admin:
   hotel:
-    image_size: 50
+    image_size: 100

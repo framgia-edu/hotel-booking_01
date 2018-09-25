@@ -7,6 +7,7 @@ gem "bcrypt", "~> 3.1", ">= 3.1.11"
 gem "bootsnap", ">= 1.1.0", require: false
 gem "bootstrap"
 gem "bootstrap_sb_admin_base_v2"
+gem "carrierwave"
 gem "coffee-rails", "~> 4.2"
 gem "config"
 gem "faker"
