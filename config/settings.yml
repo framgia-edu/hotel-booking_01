@@ -57,7 +57,7 @@ header:
 layouts:
   header:
     about: "http://localhost:3000/about"
-    contact: "http://localhost:3000/contact"
+    contact: "http://localhost:3000/contacts/new"
     help: "http://localhost:3000/help"
 admin:
   hotel:
