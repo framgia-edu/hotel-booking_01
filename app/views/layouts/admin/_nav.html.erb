@@ -47,7 +47,7 @@
       <ul class="nav in" id="side-menu">
         <li class="sidebar-search">
           <div class="input-group custom-search-form">
-            <input type="text" class="form-control" placeholder="<%= t " .placeholder_search" %>">
+            <input type="text" class="form-control" placeholder="<%= t ".placeholder_search" %>">
             <span class="input-group-btn">
               <button class="btn btn-default" type="button">
                 <i class="fa fa-search"></i>
@@ -59,6 +59,11 @@
         <li>
           <%= link_to "#", class: "active" do %>
             <i class="fa fa-dashboard fa-fw"></i><%= t ".dashboard" %>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to admin_hotels_path do %>
+            <i class="fa fa-building fa-fw"></i><%= t ".hotel" %>
           <% end %>
         </li>
       </ul>

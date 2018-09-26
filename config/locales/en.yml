@@ -12,6 +12,7 @@ en:
         settings: "Settings"
         logout: "Logout"
         toggle_navigation: "Toggle navigation"
+        hotel: "Hotel"
     header:
       hotel: "Khách sạn"
       about: "Tin tức"
@@ -98,3 +99,16 @@ en:
       create_success: "Đăng kí thành công"
       create_false: "Đăng kí thất bại"
       don't_find: "không tìm thấy"
+  admin:
+    hotels:
+      index:
+        page_header: "Hotel"
+        panel_heading: "Hotel list"
+        id: "ID"
+        name: "Name"
+        address: "Address"
+        phone: "Phone"
+        email: "Email"
+        owner: "Owner"
+        created_at: "Created At"
+        updated_at: "Updated At"
