@@ -1,0 +1,289 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="box-left ">
+        <div class="box-map">
+
+        </div>
+        <div class="box-banner">
+          <%= image_tag "banner3.png" %>
+        </div>
+        <div class="box-price">
+          <div class="title-box">
+            <p>
+              <%= t ".title-price" %>
+            </p>
+          </div>
+          <div class="form-check">
+            <%= radio_button_tag "price", "option1", false, class: "form-check-input " %> <%= t ".price-1" %><br>
+            <%= radio_button_tag "price", "option2", false, class: "form-check-input " %> <%= t ".price-2" %><br>
+            <%= radio_button_tag "price", "option3", false, class: "form-check-input " %> <%= t ".price-3" %><br>
+            <%= radio_button_tag "price", "option4", false, class: "form-check-input " %> <%= t ".price-4" %><br>
+          </div>
+          <div class="slidecontainer">
+            <%= range_field_tag "myRange", nil,
+              in: Settings.layouts.static_pages.home.min_price..
+              Settings.layouts.static_pages.home.max_price,
+              step: Settings.layouts.static_pages.home.step %>
+            <div class="row">
+              <p class="col-md-8">
+                <%= t ".price" %> : <span id="demo"></span></p>
+              <div class="col-md-4">
+                <button type="button" class="btn btn-primary">
+                  <%= t ".filter" %>
+                </button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <div class="box-type">
+          <div class="title-box">
+            <p>
+              <%= t ".type-stay" %>
+            </p>
+          </div>
+          <div class="form-check">
+            <%= radio_button_tag "type-hotel", "option1", false, class: "form-check-input " %> <%= t ".title" %><br>
+            <%= radio_button_tag "type-hotel", "option2", false, class: "form-check-input " %> <%= t ".hotel" %><br>
+            <%= radio_button_tag "type-hotel", "option3", false, class: "form-check-input " %> <%= t ".home-stay" %><br>
+            <%= radio_button_tag "type-hotel", "option4", false, class: "form-check-input " %> <%= t ".motel" %><br>
+            <%= radio_button_tag "type-hotel", "option5", false, class: "form-check-input " %> <%= t ".apartment" %><br>
+            <%= radio_button_tag "type-hotel", "option6", false, class: "form-check-input " %> <%= t ".resort " %><br>
+          </div>
+        </div>
+        <div class="box-tintuc">
+          <div class="title-box">
+            <p>
+              <%= t ".title-interdepend" %>
+            </p>
+          </div>
+          <div class="media col-md-12">
+            <%= image_tag "tintuc.jpg", class: "col-md-3" %>
+            <div class="col-md-9">
+              <%= t ".title-news" %>
+            </div>
+          </div>
+          <div class="media col-md-12">
+            <%= image_tag "tintuc.jpg", class: "col-md-3" %>
+            <div class="col-md-9">
+              <%= t ".title-news" %>
+            </div>
+          </div>
+          <div class="media col-md-12">
+            <%= image_tag "tintuc.jpg", class: "col-md-3" %>
+            <div class="col-md-9">
+              <%= t ".title-news" %>
+            </div>
+          </div>
+          <div class="media col-md-12">
+            <%= image_tag "tintuc.jpg", class: "col-md-3" %>
+            <div class="col-md-9">
+              <%= t ".title-news" %>
+            </div>
+          </div>
+          <div class="media col-md-12">
+            <%= image_tag "tintuc.jpg", class: "col-md-3" %>
+            <div class="col-md-9">
+              <%= t ".title-news" %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-9">
+      <div class="box-list-hotel">
+        <div class="media">
+          <div class="col-md-3">
+            <%= image_tag "ks.jpg", class: "mr-3" %>
+          </div>
+          <div class="media-body">
+            <div class="row">
+              <div class="col-md-8">
+                <h5 class="mt-0"><a href="datphong.html">Khách sạn Daewoo Hanoi</a></h5>
+                360 Kim Mã, Phường Ngọc Khánh, Quận Ba Đình, Hà Nội<br>
+                <%= image_tag "wifi.png" %><br>
+                <%= image_tag "p.png" %><br>
+                <%= image_tag "restaurant.png" %>
+              </div>
+              <div class="col-md-4">
+                <p class="mt-0">
+                  <%= t ".one_night_price", price: 500000 %>
+                </p>
+                <p class="mt-0">
+                  <%= t ".sale-off", price: 5  %>
+                </p>
+                <h5 class="mt-0">
+                  <%= t ".room-space" %> : 3</h5>
+                <button type="button" class="btn btn-primary">
+                  <%= t ".button-order" %> </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="media">
+          <div class="col-md-3">
+            <%= image_tag "ks.jpg", class: "mr-3" %>
+          </div>
+          <div class="media-body">
+            <div class="row">
+              <div class="col-md-8">
+                <h5 class="mt-0"> A25 Hotel Lò Đúc 2 sao</h5>
+                187 Lò Đúc, Hai Bà Trưng, Hà Nội<br>
+                <%= image_tag "wifi.png" %><br>
+                <%= image_tag "p.png" %>
+              </div>
+              <div class="col-md-4">
+                <p class="mt-0">
+                  <%= t ".one_night_price", price: 200000 %>
+                </p>
+                <p class="mt-0">
+                  <%= t ".sale-off", price: 5 %>
+                </p>
+                <h5 class="mt-0">
+                  <%= t ".room-space" %> : 10</h5>
+                <button type="button" class="btn btn-primary"><%= t ".button-order" %></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="media">
+          <div class="col-md-3">
+            <%= image_tag "ks.jpg", class: "mr-3" %>
+          </div>
+          <div class="media-body">
+            <div class="row">
+              <div class="col-md-8">
+                <h5 class="mt-0">Khách sạn Muong Thanh</h5>
+                360 Kim Mã, Phường Ngọc Khánh, Quận Ba Đình, Hà Nội<br>
+                <%= image_tag "wifi.png" %><br>
+                <%= image_tag "p.png" %><br>
+                <%= image_tag "restaurant.png" %><br>
+              </div>
+              <div class="col-md-4">
+                <p class="mt-0">
+                  <%= t ".one_night_price", price: 500000 %>
+                </p>
+                <p class="mt-0">
+                  <%= t ".sale-off", price: 5 %>
+                </p>
+                <h5 class="mt-0">
+                  <%= t ".room-space" %> : 3</h5>
+                <button type="button" class="btn btn-primary">
+                  <%= t ".button-order" %> </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="media">
+          <div class="col-md-3">
+            <%= image_tag "ks.jpg", class: "mr-3" %>
+          </div>
+          <div class="media-body">
+            <div class="row">
+              <div class="col-md-8">
+                <h5 class="mt-0">Khách sạn Muong Thanh</h5>
+                360 Kim Mã, Phường Ngọc Khánh, Quận Ba Đình, Hà Nội<br>
+                <%= image_tag "wifi.png" %><br>
+                <%= image_tag "p.png" %><br>
+                <%= image_tag "restaurant.png" %><br>
+              </div>
+              <div class="col-md-4">
+                <p class="mt-0">
+                  <%= t ".one_night_price", price: 100000 %>
+                </p>
+                <p class="mt-0">
+                  <%= t ".sale-off", price: 5 %>
+                </p>
+                <h5 class="mt-0">
+                  <%= t ".room-space" %> : 3</h5>
+                <button type="button" class="btn btn-primary">
+                  <%= t ".button-order" %> </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="media">
+          <div class="col-md-3">
+            <%= image_tag "ks.jpg", class: "mr-3" %>
+          </div>
+          <div class="media-body">
+            <div class="row">
+              <div class="col-md-8">
+                <h5 class="mt-0">Khách sạn Muong Thanh</h5>
+                360 Kim Mã, Phường Ngọc Khánh, Quận Ba Đình, Hà Nội<br>
+                <%= image_tag "wifi.png" %><br>
+                <%= image_tag "p.png" %><br>
+                <%= image_tag "restaurant.png" %><br>
+              </div>
+              <div class="col-md-4">
+                <p class="mt-0">
+                  <%= t ".one_night_price", price: 500000 %>
+                </p>
+                <p class="mt-0">
+                  <%= t ".sale-off", price: 5 %>
+                </p>
+                <h5 class="mt-0">
+                  <%= t ".room-space" %> : 7</h5>
+                <button type="button" class="btn btn-primary">
+                  <%= t ".button-order" %></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="media">
+          <div class="col-md-3">
+            <%= image_tag "ks.jpg", class: "mr-3" %>
+          </div>
+          <div class="media-body">
+            <div class="row">
+              <div class="col-md-8">
+                <h5 class="mt-0">Khách sạn Muong Thanh</h5>
+                360 Kim Mã, Phường Ngọc Khánh, Quận Ba Đình, Hà Nội<br>
+                <%= image_tag "wifi.png" %><br>
+                <%= image_tag "p.png" %><br>
+                <%= image_tag "restaurant.png" %><br>
+              </div>
+              <div class="col-md-4">
+                <p class="mt-0">
+                  <%= t ".one_night_price", price: 500000 %>
+                </p>
+                <p class="mt-0">
+                  <%= t ".sale-off", price: 5 %>
+                </p>
+                <h5 class="mt-0">
+                  <%= t ".room-space" %> : 3</h5>
+                <button type="button" class="btn btn-primary">
+                  <%= t ".button-order" %> </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page">
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                  <span class="sr-only">
+                    <%= t ".pre" %></span>
+                </a>
+              </li>
+              <li class="page-item"><%= link_to "1", nil, class: "page-link" %></li>
+              <li class="page-item"><%= link_to "2", nil, class: "page-link" %></li>
+              <li class="page-item"><%= link_to "3", nil, class: "page-link" %></li>
+              <li class="page-item"><%= link_to "4", nil, class: "page-link" %></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next ">
+                  <span aria-hidden="true">&raquo;</span>
+                  <span class="sr-only">
+                    <%= t ".next " %></span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
