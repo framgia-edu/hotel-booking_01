@@ -3,6 +3,8 @@ class Hotel < ApplicationRecord
   has_many :room_details
   has_many :images
 
+  scope :sort_desc, ->{order created_at: :desc}
+
   validates :name, presence: true,
     length: {maximum: Settings.hotel.name.max_length}
   validates :address, presence: true,

@@ -1,0 +1,49 @@
+<tr role="row">
+  <td>
+    <%= hotel.id %>
+  </td>
+  <td>
+    <% if hotel.images.present? %>
+      <%= image_tag hotel.images.order(:created_at).first.image, size: Settings.admin.hotel.image_size %>
+    <% end %>
+  </td>
+  <td data-toggle="tooltip" title="<%= hotel.description %>">
+    <%= hotel.name %>
+  </td>
+  <td>
+    <ul>
+      <li>
+        <%= t(".email") %>:
+        <%= hotel.email %>
+      </li>
+      <li>
+        <%= t(".phone") %>:
+        <%= hotel.phone %>
+      </li>
+      <li>
+        <%= t(".address") %>:
+        <%= hotel.address %>
+      </li>
+    </ul>
+  </td>
+  <td>
+    <%= hotel.user.name %>
+  </td>
+  <td>
+    <%= l hotel.created_at, format: :short %>
+  </td>
+  <td>
+    <%= l hotel.updated_at, format: :short %>
+  </td>
+  <td>
+    <%= link_to admin_hotel_path(hotel), class: "btn btn-xs btn-outline btn-primary" do %>
+    <i class="fa fa-eye"></i>
+    <% end %>
+    <%= link_to edit_admin_hotel_path(hotel), class: "btn btn-xs btn-outline btn-success" do %>
+    <i class="fa fa-pencil"></i>
+    <% end %>
+    <%= link_to admin_hotel_path(hotel), class: "btn btn-xs btn-outline btn-danger", method: :delete do %>
+    <i class="fa fa-trash"></i>
+    <% end %>
+  </td>
+</tr>
