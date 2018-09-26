@@ -121,7 +121,7 @@ ActiveRecord::Schema.define(version: 2018_09_20_035137) do
     t.string "name"
     t.string "address"
     t.string "phone"
-    t.integer "user_type"
+    t.integer "user_type", default: 1
     t.string "password_digest"
     t.string "remember_digest"
     t.boolean "activated", default: false
