@@ -1,0 +1,16 @@
+<div class="media">
+  <div class="col-md-3">
+    <%= image_tag "ks.jpg", class: "mr-3" %>
+  </div>
+  <div class="media-body">
+    <div class="row">
+      <div class="col-md-8">
+        <h5 class="mt-0"><%= link_to hotel.name, hotel_path(hotel)%></h5>
+        <%= hotel.address %>  <br>
+        <%= image_tag "wifi.png" %><br>
+        <%= image_tag "p.png" %><br>
+        <%= image_tag "restaurant.png" %>
+      </div>
+    </div>
+  </div>
+</div>

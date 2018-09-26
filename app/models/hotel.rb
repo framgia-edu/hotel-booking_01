@@ -6,6 +6,7 @@ class Hotel < ApplicationRecord
     reject_if: proc{|attributes| attributes["image"].blank?}
 
   scope :sort_desc, ->{order created_at: :desc}
+  scope :address_like, ->(address){where "address LIKE ?", "%#{address}%"}
 
   validates :name, presence: true,
     length: {maximum: Settings.hotel.name.max_length}
