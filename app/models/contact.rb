@@ -1,7 +1,7 @@
 class Contact < ApplicationRecord
-  belongs_to :user, class_name: User.name, foreign_key: :user_id
+  belongs_to :user, optional: true
 
-  validates :title, :content, :user, presence: true
+  validates :title, :content, presence: true
   validates :name, presence: true,
     length: {maximum: Settings.contact.name.max_length}
   VALID_PHONE_REGEX = /\A^(01[2689]|09)[0-9]{8}$\z/
