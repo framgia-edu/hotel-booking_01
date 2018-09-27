@@ -2,6 +2,8 @@ class Hotel < ApplicationRecord
   belongs_to :user
   has_many :room_details
   has_many :images
+  accepts_nested_attributes_for :images, allow_destroy: true,
+    reject_if: proc{|attributes| attributes["image"].blank?}
 
   scope :sort_desc, ->{order created_at: :desc}
 

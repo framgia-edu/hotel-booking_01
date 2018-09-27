@@ -1,0 +1,4 @@
+<span>
+  <%= image_tag image.image_url, size: Settings.admin.hotel.image_size%>
+  <%= link_to t(".destroy"), admin_image_path(image), method: :delete, data:{confirm: t(".confirm")} %>
+</span>

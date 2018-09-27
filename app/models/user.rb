@@ -5,6 +5,10 @@ class User < ApplicationRecord
   has_many :bills
   enum user_type: {admin: 3, employee: 2, user: 1}
 
+  scope :sort_desc, ->{order(created_at: :desc)}
+  scope :employee, ->{where user_type: User.user_types[:employee]}
+  scope :select_box, ->{select :id, :name}
+
   validates :user_name, presence: true,
     uniqueness: {case_sensitive: Settings.user.user_name.case_sensitive},
     length: {maximum: Settings.user.user_name.max_length}

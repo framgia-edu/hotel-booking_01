@@ -4,7 +4,7 @@
   </td>
   <td>
     <% if hotel.images.present? %>
-      <%= image_tag hotel.images.order(:created_at).first.image, size: Settings.admin.hotel.image_size %>
+    <%= image_tag hotel.images.order(:created_at).first.image_url, size: Settings.admin.hotel.image_size %>
     <% end %>
   </td>
   <td data-toggle="tooltip" title="<%= hotel.description %>">
@@ -42,7 +42,8 @@
     <%= link_to edit_admin_hotel_path(hotel), class: "btn btn-xs btn-outline btn-success" do %>
     <i class="fa fa-pencil"></i>
     <% end %>
-    <%= link_to admin_hotel_path(hotel), class: "btn btn-xs btn-outline btn-danger", method: :delete do %>
+    <%= link_to admin_hotel_path(hotel), class: "btn btn-xs btn-outline btn-danger",
+      method: :delete, data:{confirm: t(".confirm")} do %>
     <i class="fa fa-trash"></i>
     <% end %>
   </td>
