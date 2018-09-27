@@ -10,13 +10,14 @@
 
 <body cz-shortcut-listen="true">
   <div id="wrapper">
-
     <%= render "layouts/admin/nav" %>
-    <% flash.each do |message_type, message| %>
-      <div class="alert alert-<%= message_type %>"><%= message %></div>
-    <% end %>
     <div id="page-wrapper" style="min-height: 196px;">
-        <%= yield %>
+      <% flash.each do |message_type, message| %>
+        <div class="alert alert-<%= message_type %>">
+          <%= message %>
+        </div>
+      <% end %>
+      <%= yield %>
     </div>
     <!-- /#page-wrapper -->
 
