@@ -1,1 +1,33 @@
 <% provide :title, t(".title") %>
+<div class="container">
+  <div class="help">
+    <h1><%= t ".text_help" %></h1>
+    <div class="row">
+      <div class="col">
+        <h4><%= t ".introduce_book" %></h4>
+        <ul>
+          <li><%= link_to t(".introduce_one"), "#" %></li>
+          <li><%= link_to t(".introduce_second"), "#" %></li>
+          <li><%= link_to t(".introduce_three"), "#" %></li>
+          <li><%= link_to t(".introduce_one"), "#" %></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h4><%= t ".pay" %></h4>
+        <ul>
+          <li><%= link_to t(".price"), "#" %></li>
+          <li><%= link_to t(".contact"), "#" %></li>
+          <li><%= link_to t(".how_about"), "#" %></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h4><%= t ".tips" %></h4>
+        <ul>
+          <li><%= link_to t(".tips_one"), "#" %></li>
+          <li><%= link_to t(".tips_second"), "#" %></li>
+          <li><%= link_to t(".tips_three"), "#" %></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

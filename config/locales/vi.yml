@@ -7,12 +7,12 @@ vi:
       nav:
         title: "Hotel Manager v1.0"
         dashboard: "Dashboard"
-        placeholder_search: "Search..."
-        profile: "Profile"
-        settings: "Settings"
-        logout: "Logout"
+        placeholder_search: "Tìm kiếm"
+        profile: "Hồ sơ"
+        settings: "Chỉnh sửa"
+        logout: "Đăng xuất"
         toggle_navigation: "Toggle navigation"
-        hotel: "Hotel"
+        hotel: "Khách sạn"
     header:
       hotel: "Khách sạn"
       about: "Tin tức"
@@ -61,6 +61,20 @@ vi:
       title_news3: "Đến 11 khách sạn dưới nước này rồi, bạn sẽ không muốn về nhà nữa"
     help:
       title: "Hỗ trợ"
+      text_help: "XIN CHÀO CHÚNG TÔI CÓ THỂ GIÚP GÌ CHO BẠN ?"
+      introduce_book: "Thông tin đặt phòng"
+      introduce_one: "Hủy hoặc thay đổi đặt phòng"
+      introduce_second: "Tìm thông tin đặt phòng của bạn"
+      introduce_three: "Vì sao Booking hotel không có thông tin đặt phòng của tôi"
+      introduce_fore: "Chi tiết về đặt phòng của bạn"
+      pay: "Thanh toán và phí phát sinh"
+      price: "Giá trên Booking hotel là giá mỗi đêm ?"
+      contact: "Đã liên hệ với trang đặt phòng nhưng vẫn gặp rắc rối ?"
+      how_about: "Làm sao chúng tôi có thể lấy lại tiền của mình ?"
+      tips: "Mẹo và thủ thuật Booking hotel"
+      tips_one: "Tìm thấy thông tin khó hiểu trên trang web của chúng tôi ?"
+      tips_second: "Lời khuyên khi bạn đặt phòng"
+      tips_three: "Dịch vụ đặc biệt của chúng tôi"
   users:
     new:
       title: "Đăng kí"
@@ -69,9 +83,16 @@ vi:
       create_account: "Đăng kí tài khoản"
     create:
       create_success: "Đăng kí thành công"
+      create_false: "Đăng kí thất bại"
     edit:
       title: "Chỉnh sửa hồ sơ"
       save_change: "Lưu thay đổi"
+    show:
+      profile: "Thông tin cá nhân"
+      name: "Họ tên: "
+      email: "Email: "
+      phone: "Điện thoại: "
+      address: "Địa chỉ: "
   sessions:
     new:
       title: "Đăng nhập"
@@ -107,8 +128,6 @@ vi:
       next: "Next"
   controllers:
     users_controller:
-      create_success: "Đăng kí thành công"
-      create_false: "Đăng kí thất bại"
       don't_find: "không tìm thấy"
   admin:
     shared:
@@ -144,21 +163,21 @@ vi:
       image:
         confirm: "Are you sure?"
   contacts:
-      new:
-        title: "Liên hệ"
-        write_comment: "Viết nhận xét"
-        text_name: "Họ tên"
-        text_address: "Địa chỉ"
-        text_email: "Email"
-        text_phone: "Số điện thoại"
-        text_title: "Tiêu đề"
-        text_comment: "Nhận xét"
-        btn_send: "GỬI LIÊN HỆ"
-        input_name: "Nhập Họ Tên"
-        input_address: "Nhập Địa chỉ"
-        input_email: "Nhập email"
-        input_phone: "Nhập số điện thoại"
-        input_title: "Nhập tiêu đề"
-      create:
-        create_success: "Cảm ơn nhận xét của bạn"
-        create_false: "Lỗi rồi :("
+    new:
+      title: "Liên hệ"
+      write_comment: "Viết nhận xét"
+      text_name: "Họ tên"
+      text_address: "Địa chỉ"
+      text_email: "Email"
+      text_phone: "Số điện thoại"
+      text_title: "Tiêu đề"
+      text_comment: "Nhận xét"
+      btn_send: "GỬI LIÊN HỆ"
+      input_name: "Nhập Họ Tên"
+      input_address: "Nhập Địa chỉ"
+      input_email: "Nhập email"
+      input_phone: "Nhập số điện thoại"
+      input_title: "Nhập tiêu đề"
+    create:
+      create_success: "Cảm ơn nhận xét của bạn"
+      create_false: "Lỗi rồi :("
