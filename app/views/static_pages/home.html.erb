@@ -1,57 +1,69 @@
 <div class="search">
   <div class="container">
-    <div class="input-group col-md-12">
-      <div class="section-heading">
-        <h1><%= t ".text" %></h1>
-          <p><%= t ".introduce_first" %></p>
-          <p><%= t ".introduce_second" %></p>
-      </div>
+
+    <div class="section-heading">
+      <h1>
+        <%= t ".text" %>
+      </h1>
+      <p>
+        <%= t ".introduce_first" %>
+      </p>
+      <p>
+        <%= t ".introduce_second" %>
+      </p>
+    </div>
+
+    <%= form_tag hotels_path, method: :get do  %>
+    <div class="input-group">
+      <p class="form-text">
+        <%= t ".title-search" %>
+      </p>
       <div class="col-md-8">
-        <input type="text" class="form-control" placeholder="<%= t(".input_hotel") %>" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <%= text_field_tag "search", nil, placeholde: t(".input_hotel") %>
       </div>
       <div class="col-md-2">
-        <input type="text" class="form-control" placeholder="<%= t(".received_date") %>" >
+        <%= text_field_tag "received", nil, placeholder: t(".received_date") %>
       </div>
       <div class="col-md-2">
-        <input type="text" class="form-control" placeholder="<%= t(".pay_day") %>" >
+        <%= text_field_tag "pay", nil, placeholder: t(".pay_date") %>
       </div>
       <div class="col-md-8"></div>
-      <div class="col-md-2 mt-1">
-        <span class="input-group-btn">
-          <button type="button" class="btn btn-primary"><%= t ".get_location" %></button>
-        </span>
+      <div class="col-md-2">
+          <%= submit_tag t(".get_location"), class: "btn btn-primary" %>
       </div>
-      <div class="col-md-2 mt-1">
-        <span class="input-group-btn">
-          <button type="button" class="btn btn-primary"><%= t ".search" %></button>
-        </span>
-      </div>	
+      <div class="col-md-2">
+          <%= submit_tag t(".search"), class: "btn btn-primary" %>
+      </div>
     </div>
+    <% end %>
   </div>
 </div>
-<div id="demo" class="carousel slide" data-ride="carousel">
-  <ul class="carousel-indicators">
-    <li data-target="#demo" data-slide-to="0" class="active"></li>
-    <li data-target="#demo" data-slide-to="1"></li>
-    <li data-target="#demo" data-slide-to="2"></li>
-  </ul>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <%= image_tag("slide1.jpg", :style => "width: 100%;") %>
+
+<div class="cor-form ">
+  <div class="page_width">
+    <div class="desktop-container">
+      <div id="carouselExampleSlidesOnly" class="carousel slide carousel-slide-desktop" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <%= image_tag "1.jpg" %>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="carousel-item">
-      <%= image_tag("slide2.jpg", :style => "width: 100%;") %>
-    </div>
-    <div class="carousel-item">
-      <%= image_tag("slide3.jpg", :style => "width: 100%;") %>
+    <div class="phone-container">
+      <div id="carouselExampleSlidesOnly" class="carousel slide carousel-slide-phone" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <%= image_tag "11.jpg" %>
+          </div>
+          <div class="carousel-item">
+            <%= image_tag "22.jpg" %>
+          </div>
+          <div class="carousel-item">
+            <%= image_tag "33.jpg" %>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-
-  <a class="carousel-control-prev" data-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </a>
-
-  <a class="carousel-control-next" data-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </a>
 </div>

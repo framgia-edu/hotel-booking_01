@@ -1,4 +1,4 @@
-en:
+vi:
   helpers:
     application_helper:
       text: "Book Hotel"
@@ -45,14 +45,15 @@ en:
       social: "Social"
   static_pages:
     home:
-      text: "Booking hotel"
+      text: "Website đặt phòng khách sạn Booking hotel"
       introduce_first: "Không chỉ là một website đặt phòng thông thường mà chúng tôi đang cung cấp và hỗ trợ cho bạn một giải pháp."
       introduce_second: "Lựa chọn những khách sạn phù hợp nhất với chuyến đi của bạn."
       input_hotel: "Nhập khách sạn hoặc địa chỉ đến"
       received_date: "Ngày nhận"
-      pay_day: "Ngày trả"
+      pay_date: "Ngày trả"
       get_location: "Lấy Vị trí"
       search: "TÌm Kiếm"
+      title-search: "Chọn khách sạn hoặc địa điểm cần đén"
     about:
       title: "Tin tức"
       title_news1: "Điểm danh những khách sạn chất nhất năm châu"
@@ -79,6 +80,31 @@ en:
       remember_login: "Ghi nhớ đăng nhập"
       login: "Đăng nhập"
       register_now: "Bạn không có tài khoản? Đăng kí ngay"
+  hotels:
+    index:
+      title: "Khách Sạn"
+      price: "Giá"
+      filter: "Lọc"
+      title-price: "Mức Giá"
+      price-1: "Dưới 500000đ"
+      price-2: "500000đ - 1000000đ"
+      price-3: "1000000đ - 5000000đ"
+      price-4: "Trên 500000đ"
+      one_night_price: "Giá 1 đêm: %{price}"
+      sale-off: "Giá Khuyến maị: %{price}"
+      room-space: "Số phòng trống"
+      type-stay: "Loại chỗ ở"
+      hotel: "Nhà Nghỉ"
+      home-stay: "Home Stay"
+      motel: "Nhà Trọ"
+      apartment: "Căn Hộ"
+      resort: "Resort"
+      title-interdepend: "Tin Liên Quan"
+      title-news: "Cras sit amet nibh libero, in gravida nulla."
+      hotel-where: "Khách Sạn tại"
+      button-order: "Đặt phòng"
+      pre: "Previous"
+      next: "Next"
   controllers:
     users_controller:
       create_success: "Đăng kí thành công"

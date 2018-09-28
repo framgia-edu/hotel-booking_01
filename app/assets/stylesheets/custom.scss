@@ -1,19 +1,30 @@
-@import 'color_variables';
-body{
+@import "color_variables";
+
+body {
   font-family: arial;
   font-size: 14px;
   margin: 0px auto;
   padding: 0px;
   background: $background-gray;
 }
-.search{
-  background-image: url('https://i.imgur.com/KeANeIB.jpg') ;
-  width: 100%;
-  height: 270px;
+
+.search {
+  background-image: url("https://i.imgur.com/KeANeIB.jpg");
+  background-size: 100% 450px;
+  height: 450px;
 }
-.container{
+#myRange{
+  width: 90%;
+  margin: 0px auto;
+  margin-top: 10px;
+}
+.slidecontainerbtn button{
+  padding: 8px 15px;
+}
+.container {
   padding-top: 50px;
 }
+
 /* REMOVE THIS, USE YOUR OWN  */
 .dummy_page {
   background-color: $white;
@@ -23,12 +34,108 @@ body{
   width: 100%;
   text-align: center;
 }
-  /* STYLES SPECIFIC TO FOOTER  */
+
+/* body header */
+.section-heading {
+  color: #535353;
+  text-align: center;
+  margin-bottom: 30px;
+  max-width: 1170px
+}
+
+.input-group {
+  width: 100%;
+  padding: 0 10px;
+  height: 200px;
+  border-radius: 5px;
+  background: #fff;
+}
+#search ,#received ,#pay{
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.form-text {
+  margin-top: 15px;
+  margin-bottom: 0px;
+  padding-left: 20px;
+  width: 100%
+}
+
+.cor-form {
+  background: url(https://i.imgur.com/B4DtkeN.jpg) no-repeat top center;
+  background-size: 1440px 450px;
+  height: 450px;
+  padding-top: 50px;
+  margin-bottom: 50px;
+
+  .page_width {
+    width: 990px;
+    height: 440px;
+    margin: auto !important;
+    position: relative;
+  }
+}
+
+.desktop-container {
+  background: url(https://i.imgur.com/NdPu8Bv.png) no-repeat center center;
+  background-size: 750px 450px;
+  height: 450px;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 998;
+
+  .carousel-inner img {
+    width: 550px !important;
+    height: 350px;
+    left: 0;
+    top: 0;
+    position: relative;
+  }
+
+}
+
+.carousel-slide-desktop {
+  position: absolute !important;
+  top: 25px;
+  left: 220px;
+}
+
+
+.phone-container {
+  background: url(https://i.imgur.com/XabAJJ1.png) no-repeat center center;
+  background-size: 100px 200px;
+  width: 125px;
+  height: 200px;
+  position: relative;
+  top: -250px;
+  left: 130px;
+  z-index: 999;
+}
+
+.carousel-slide-phone {
+  position: absolute !important;
+  width: 90px !important;
+  top: 25px;
+  left: 20px;
+}
+
+.phone-container .carousel-inner img {
+  height: 150px;
+  left: 0;
+  top: 0;
+  position: relative;
+}
+
+/* STYLES SPECIFIC TO FOOTER  */
 .footer {
   background-color: $dark;
   height: 350px;
   width: 100%;
-  position: relative;	
+  position: relative;
 }
 
 .footer .col {
@@ -42,7 +149,7 @@ body{
 }
 
 .footer .col h1 {
-  color: rgba(255,255,255,0.2);
+  color: rgba(255, 255, 255, 0.2);
   font-family: inherit;
   font-size: 12px;
   line-height: 17px;
@@ -53,7 +160,7 @@ body{
   font-weight: normal;
   text-transform: uppercase;
 }
-	
+
 .footer .col ul {
   list-style-type: none;
   margin: 0;
@@ -76,7 +183,7 @@ body{
   display: inline-block;
   padding-right: 5px !important;
 }
-	
+
 .footer .col ul li:hover {
   color: $gray;
   transition: .1s;
@@ -94,54 +201,64 @@ body{
     width: 1200px;
   }
 }
+
 @media only screen and (max-width: 1139px) {
   .contain .social {
     display: block;
     width: 1000px;
   }
+
   .social h1 {
     margin: 0px;
   }
 }
+
 @media only screen and (max-width: 950px) {
   .footer .col {
     width: 33%;
   }
+
   .footer .col h1 {
     font-size: 14px;
   }
+
   .footer .col ul li {
     font-size: 13px;
   }
 }
+
 @media only screen and (max-width: 500px) {
   .footer .col {
     width: 50%;
   }
+
   .footer .col h1 {
     font-size: 14px;
   }
+
   .footer .col ul li {
     font-size: 13px;
   }
 }
+
 @media only screen and (max-width: 340px) {
   .footer .col {
-  width: 100%;
+    width: 100%;
   }
 }
-  
-header{
+
+header {
   font-size: 14px;
   font-family: Arial;
-  .navbar{
+
+  .navbar {
     padding: 0px;
     text-transform: uppercase;
   }
 }
 
 //slide
-#myCarousel{
+#myCarousel {
   margin-top: 5px;
 }
 
@@ -153,45 +270,53 @@ header{
   position: relative;
 }
 
-.title{
+.title {
   background-color: rgb(245, 245, 245);
   height: 50px;
   width: auto;
-  box-shadow: 1px 1px 1px 1px rgba(50,50,50,0.2);
+  box-shadow: 1px 1px 1px 1px rgba(50, 50, 50, 0.2);
   margin-top: 5px;
 }
-h1.col-md-9.titlepage{
+
+h1.col-md-9.titlepage {
   font-size: 28px;
   margin-top: 10px;
   text-transform: uppercase;
   font-weight: bold;
 
 }
-ol.col-md-3.breadcrumb{
+
+ol.col-md-3.breadcrumb {
   margin-top: 5px;
   background-color: rgb(245, 245, 245);
   padding-right: 0px;
 }
-ol.col-md-3.breadcrumb li a{
+
+ol.col-md-3.breadcrumb li a {
   text-decoration: none;
   color: black;
 }
-#contact-lienhe{
+
+#contact-lienhe {
   margin-top: 50px;
   margin-bottom: 100px;
 }
-.col-md-9.form-contact h2{
+
+.col-md-9.form-contact h2 {
   font-size: 24px;
   margin-left: 12px;
 }
-.text{
+
+.text {
   font-weight: normal;
   text-transform: uppercase;
 }
-.text b{
+
+.text b {
   color: red;
 }
-.btn{
+
+.btn {
   border: none;
   color: white;
   padding: 14px 28px;
@@ -199,98 +324,122 @@ ol.col-md-3.breadcrumb li a{
 }
 
 
-.lienhe {background-color: $orange;}
-.lienhe:hover {background: $orange;}
-.btn.lienhe span{
+.lienhe {
+  background-color: $orange;
+}
+
+.lienhe:hover {
+  background: $orange;
+}
+
+.btn.lienhe span {
   font-weight: bold;
 }
-.col-md-3.contact-gioithieu ul li{
+
+.col-md-3.contact-gioithieu ul li {
   line-height: 1.9em;
 }
 
 /*end trang lien he*/
 
 /*tin tuc*/
-.content-news{
+.content-news {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-.post{
+
+.post {
   padding-bottom: 50px;
   border-bottom: 2px solid rgb(247, 243, 243);
   margin-bottom: 40px;
 }
-.post-title h2{
+
+.post-title h2 {
   margin-top: 3px;
 }
-.post-title h2 a{
+
+.post-title h2 a {
   font-size: 24px;
   font-weight: bold;
   text-transform: uppercase;
   color: $dark;
   text-decoration: none;
 }
-.post-title h2 a:hover{
+
+.post-title h2 a:hover {
   color: rgb(26, 188, 156);
 }
-ul.post-date{
+
+ul.post-date {
   margin-bottom: 40px;
 }
-ul.post-date li{
+
+ul.post-date li {
   display: inline-block;
   color: rgb(153, 153, 153);
   font-style: italic;
   font-size: 12px;
   margin-right: 3px;
 }
-ul.post-date li a{
+
+ul.post-date li a {
   text-decoration: none;
   font-style: italic;
   color: $orange-low;
 }
-.post-content p{
+
+.post-content p {
   font-size: 15px;
   line-height: 1.8;
   margin-bottom: 30px;
 }
-.more-link{
+
+.more-link {
   color: $orange-low;
   font-style: italic;
   text-decoration: underline;
 }
-.news-category{
+
+.news-category {
   border-bottom: 1px solid rgb(238, 238, 238);
   margin-bottom: 50px;
 }
-.news-category h4{
+
+.news-category h4 {
   text-transform: uppercase;
   font-size: 15px;
   font-weight: bold;
 }
-.news-category ul{
+
+.news-category ul {
   margin-left: 15px;
   margin-top: 35px;
   margin-bottom: 45px;
 }
-.news-category ul li a{
+
+.news-category ul li a {
   color: rgb(0, 0, 0);
   text-decoration: none;
 }
-.img-circle-custom{
+
+.img-circle-custom {
   width: 48px;
   height: 48px;
 }
-.news-new h4{
+
+.news-new h4 {
   text-transform: uppercase;
   font-size: 15px;
   font-weight: bold;
   margin-bottom: 30px;
 }
-.entry-image{
+
+.entry-image {
   float: left;
   margin-right: 10px;
 }
-.entry-title h4 a{
+
+.entry-title h4 a {
   color: rgb(0, 0, 0);
   font-weight: normal;
   font-size: 14px;
@@ -299,36 +448,41 @@ ul.post-date li a{
   line-height: 1.6em;
 }
 
-ul.entry-meta li{
+ul.entry-meta li {
   list-style-type: none;
   font-style: italic;
   font-size: 12px;
   margin-left: 60px;
   color: rgb(153, 153, 153);
 }
-.list-news{
+
+.list-news {
   border-bottom: 1px dashed rgb(229, 229, 229);
 }
-.entry-content.notopmargin{
+
+.entry-content.notopmargin {
   border-bottom: 2px solid rgb(229, 229, 229);
   margin-bottom: 50px;
   padding-bottom: 50px;
 }
-.post-title-lq h2 a{
+
+.post-title-lq h2 a {
   color: $orange-low;
   font-size: 20px;
   line-height: 1em;
   text-decoration: none;
 }
-.col-md-6.news-lienquan{
+
+.col-md-6.news-lienquan {
   margin-bottom: 20px;
   padding-bottom: 20px;
   border-bottom: 1px dashed rgb(223, 221, 221);
 }
 
-.content-news{
+.content-news {
   margin: auto;
 }
-.post-image{
+
+.post-image {
   margin: 10px 0 10px
 }
