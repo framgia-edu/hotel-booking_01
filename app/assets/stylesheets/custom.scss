@@ -1,4 +1,4 @@
-@import "color_variables";
+@import 'color_variables';
 
 body {
   font-family: arial;
@@ -9,7 +9,7 @@ body {
 }
 
 .search {
-  background-image: url("https://i.imgur.com/KeANeIB.jpg");
+  background-image: url('https://i.imgur.com/KeANeIB.jpg');
   background-size: 100% 450px;
   height: 450px;
 }
@@ -671,4 +671,14 @@ ul.entry-meta li {
 
 .post-image {
   margin: 10px 0 10px
+}
+
+.help .col ul li {
+  display: inline-block;
+  color: rgb(243, 98, 45);
+  text-decoration-line: underline;
+  margin: 10px 0 5px;
+}
+.help .col h4{
+  margin: 30px 0 30px;
 }

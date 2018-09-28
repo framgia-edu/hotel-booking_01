@@ -2,9 +2,12 @@
   <div class="row">
     <div class="col-md-6 offset-md-3">
       <div class="text-left">
-        <label><%= @user.name %></label>
+        <h1><%= t ".profile" %></h1>
+        <h3><label><%= t ".name" %><%= @user.name %></label></h3>
+        <h3><label><%= t ".email" %><%= @user.email %></label></h3>
+        <h3><label><%= t ".phone" %><%= @user.phone %></label></h3>
+        <h3><label><%= t ".address" %><%= @user.address %></label></h3>
       </div>
-      <%= link_to t(".logout"), logout_path, method: :delete %> 
     </div>
   </div>
 </div>
