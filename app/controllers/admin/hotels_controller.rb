@@ -30,7 +30,7 @@ class Admin::HotelsController < Admin::BaseController
   end
 
   def update
-    if @hotel.update_attribute hotel_params
+    if @hotel.update hotel_params
       save_hotel_image
       flash[:success] = t ".success"
       redirect_to admin_hotels_path
@@ -59,6 +59,10 @@ class Admin::HotelsController < Admin::BaseController
 
   def find_hotel
     @hotel = Hotel.find_by id: params[:id]
+
+    return if @hotel
+    flash[:danger] = t ".not_found"
+    redirect_to admin_hotels_path
   end
 
   def save_hotel_image

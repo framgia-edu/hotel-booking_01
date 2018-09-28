@@ -41,3 +41,13 @@ User.create! user_name: "employee",
                      phone: phone,
                      description: description 
 end
+
+5.times do |n|
+  category = Category.create! name: "category-#{n+1}",
+                              description: Faker::Lorem.paragraph
+  10.times do 
+    category.posts.create! title: Faker::Book.title,
+                           content: Faker::Lorem.paragraphs,
+                           user_id: 1
+  end 
+end
