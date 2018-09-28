@@ -13,16 +13,76 @@ body {
   background-size: 100% 450px;
   height: 450px;
 }
-#myRange{
+
+#myRange {
   width: 90%;
   margin: 0px auto;
   margin-top: 10px;
 }
-.slidecontainerbtn button{
+
+.slidecontainerbtn button {
   padding: 8px 15px;
 }
+
 .container {
   padding-top: 50px;
+  margin-bottom: 50px;
+  .page_width {
+    width: 990px;
+    height: 440px;
+    margin: auto !important;
+    position: relative;
+    text-align: center;
+  }
+}
+
+.desktop-container {
+  background: url(https://i.imgur.com/NdPu8Bv.png) no-repeat center center;
+  background-size: 750px 450px;
+  height: 450px;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 998;
+
+  .carousel-inner img {
+    height: 360px;
+    left: 0;
+    top: 0;
+    position: relative;
+  }
+}
+
+.carousel-slide-desktop {
+  position: absolute !important;
+  top: 25px;
+  left: 220px;
+}
+
+.phone-container {
+  background: url(https://i.imgur.com/XabAJJ1.png) no-repeat center center;
+  background-size: 100px 200px;
+  width: 125px;
+  height: 200px;
+  position: relative;
+  top: -250px;
+  left: 130px;
+  z-index: 999;
+
+  .carousel-inner img {
+    height: 150px;
+    left: 0;
+    top: 0;
+    position: relative;
+  }
+}
+
+.carousel-slide-phone {
+  position: absolute !important;
+  width: 97px !important;
+  height: 122px;
+  top: 25px;
+  left: 15px;
 }
 
 /* REMOVE THIS, USE YOUR OWN  */
@@ -50,7 +110,10 @@ body {
   border-radius: 5px;
   background: #fff;
 }
-#search ,#received ,#pay{
+
+#search,
+#received,
+#pay {
   width: 100%;
   height: 50px;
   border-radius: 5px;
@@ -87,7 +150,6 @@ body {
   top: 0;
   left: 0;
   z-index: 998;
-
   .carousel-inner img {
     width: 550px !important;
     height: 350px;
@@ -95,7 +157,6 @@ body {
     top: 0;
     position: relative;
   }
-
 }
 
 .carousel-slide-desktop {
@@ -103,7 +164,6 @@ body {
   top: 25px;
   left: 220px;
 }
-
 
 .phone-container {
   background: url(https://i.imgur.com/XabAJJ1.png) no-repeat center center;
@@ -122,7 +182,6 @@ body {
   top: 25px;
   left: 20px;
 }
-
 .phone-container .carousel-inner img {
   height: 150px;
   left: 0;
@@ -131,54 +190,149 @@ body {
 }
 
 /* STYLES SPECIFIC TO FOOTER  */
+/* index hotel  */
+.row-title {
+  margin-bottom: 30px;
+  border-bottom: 1px solid $white-D4;
+}
+.box-list-hotel {
+  .media {
+    background: $white;
+    margin-bottom: 10px;
+  }
+  .btn-primary {
+    padding: 5px 10px;
+  }
+}
+
+.box-left {
+  .title-box {
+    font-size: 20px;
+    margin-left: 20px;
+    display: inline;
+  }
+  .box-map {
+    margin-bottom: 30px;
+  }
+  .box-price {
+    margin-top: 20px;
+    background: $white;
+    min-height: 220px;
+    font-size: 14px;
+    .form-check {
+      display: block;
+      margin-left: 20px;
+    }
+
+    /* range-input */
+    .slidecontainer {
+      width: 90%;
+      margin: auto;
+      margin-top: 10px;
+      p {
+        margin-top: 15px;
+        padding: 0px
+      }
+      button {
+        margin-top: 12px;
+        padding: 2px 8px;
+      }
+    }
+    .slider {
+      -webkit-appearance: none;
+      width: 100%;
+      height: 5px;
+      background: $white-D3;
+      outline: none;
+      opacity: 0.7;
+      -webkit-transition: .2s;
+      transition: opacity .2s;
+      :hover {
+        opacity: 1;
+      }
+    }
+    .slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 25px;
+      height: 25px;
+      background: $green;
+      cursor: pointer;
+    }
+    .slider::-moz-range-thumb {
+      width: 25px;
+      height: 25px;
+      background: $green;
+      cursor: pointer;
+    }
+  }
+  .box-type {
+    margin-top: 20px;
+    background: $white;
+    font-size: 14px;
+  }
+  .box-tintuc {
+    margin-top: 20px;
+    background-color: $white;
+    height: 470px;
+    font-size: 11px;
+    .media {
+      padding: 5px 0;
+    }
+  }
+}
+
+/* footer */
+
 .footer {
   background-color: $dark;
   height: 350px;
   width: 100%;
   position: relative;
+  .col {
+    box-sizing: border-box;
+    float: left;
+    height: 150px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0px 20px 20px 20px;
+    width: 300px;
+    h1 {
+      color: rgba(255, 8, 8, 0.2);
+      font-family: inherit;
+      font-size: 12px;
+      line-height: 17px;
+      letter-spacing: 0.250em;
+      margin: 0;
+      padding: 20px 0px 5px 0px;
+      padding: 0;
+      font-weight: normal;
+      text-transform: uppercase;
+    }
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      li {
+        color: rgb(219, 214, 214);
+        font-size: 14px;
+        font-family: inherit;
+        font-weight: bold;
+        padding: 5px 0px 5px 0px;
+        cursor: pointer;
+        transition: .2s;
+        -webkit-transition: .2s;
+        -moz-transition: .2s;
+      }
+      li:hover {
+        color: $gray;
+        transition: .1s;
+        -webkit-transition: .1s;
+        -moz-transition: .1s;
+      }
+    }
+  }
 }
-
-.footer .col {
-  box-sizing: border-box;
-  float: left;
-  height: 150px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  padding: 0px 20px 20px 20px;
-  width: 300px;
-}
-
-.footer .col h1 {
-  color: rgba(255, 255, 255, 0.2);
-  font-family: inherit;
-  font-size: 12px;
-  line-height: 17px;
-  letter-spacing: 0.250em;
-  margin: 0;
-  padding: 20px 0px 5px 0px;
-  padding: 0;
-  font-weight: normal;
-  text-transform: uppercase;
-}
-
-.footer .col ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.footer .col ul li {
-  color: rgb(219, 214, 214);
-  font-size: 14px;
-  font-family: inherit;
-  font-weight: bold;
-  padding: 5px 0px 5px 0px;
-  cursor: pointer;
-  transition: .2s;
-  -webkit-transition: .2s;
-  -moz-transition: .2s;
-}
-
 .social ul li {
   display: inline-block;
   padding-right: 5px !important;
@@ -261,7 +415,6 @@ header {
 #myCarousel {
   margin-top: 5px;
 }
-
 .carousel-inner img {
   height: 440px;
   left: 0;
@@ -269,9 +422,8 @@ header {
   top: 0;
   position: relative;
 }
-
 .title {
-  background-color: rgb(245, 245, 245);
+  background-color: $white;
   height: 50px;
   width: auto;
   box-shadow: 1px 1px 1px 1px rgba(50, 50, 50, 0.2);
@@ -288,13 +440,12 @@ h1.col-md-9.titlepage {
 
 ol.col-md-3.breadcrumb {
   margin-top: 5px;
-  background-color: rgb(245, 245, 245);
+  background-color: $white;
   padding-right: 0px;
-}
-
-ol.col-md-3.breadcrumb li a {
-  text-decoration: none;
-  color: black;
+  li a {
+    text-decoration: none;
+    color: $dark;
+  }
 }
 
 #contact-lienhe {
@@ -310,10 +461,10 @@ ol.col-md-3.breadcrumb li a {
 .text {
   font-weight: normal;
   text-transform: uppercase;
-}
 
-.text b {
-  color: red;
+  b {
+    color: $red;
+  }
 }
 
 .btn {
@@ -321,8 +472,10 @@ ol.col-md-3.breadcrumb li a {
   color: white;
   padding: 14px 28px;
   cursor: pointer;
+  .lienhe span {
+    font-weight: bold;
+  }
 }
-
 
 .lienhe {
   background-color: $orange;
@@ -340,8 +493,6 @@ ol.col-md-3.breadcrumb li a {
   line-height: 1.9em;
 }
 
-/*end trang lien he*/
-
 /*tin tuc*/
 .content-news {
   margin-top: 50px;
@@ -350,12 +501,22 @@ ol.col-md-3.breadcrumb li a {
 
 .post {
   padding-bottom: 50px;
-  border-bottom: 2px solid rgb(247, 243, 243);
+  border-bottom: 2px solid $white;
   margin-bottom: 40px;
 }
 
 .post-title h2 {
   margin-top: 3px;
+  a {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $dark;
+    text-decoration: none;
+  }
+  a:hover {
+    color: rgb(26, 188, 156);
+  }
 }
 
 .post-title h2 a {
@@ -372,6 +533,20 @@ ol.col-md-3.breadcrumb li a {
 
 ul.post-date {
   margin-bottom: 40px;
+
+  li {
+    display: inline-block;
+    color: $gray;
+    font-style: italic;
+    font-size: 12px;
+    margin-right: 3px;
+
+    a {
+      text-decoration: none;
+      font-style: italic;
+      color: $orange-low;
+    }
+  }
 }
 
 ul.post-date li {
@@ -401,8 +576,14 @@ ul.post-date li a {
 }
 
 .news-category {
-  border-bottom: 1px solid rgb(238, 238, 238);
+  border-bottom: 1px solid $white;
   margin-bottom: 50px;
+
+  h4 {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+  }
 }
 
 .news-category h4 {
@@ -415,6 +596,11 @@ ul.post-date li a {
   margin-left: 15px;
   margin-top: 35px;
   margin-bottom: 45px;
+
+  li a {
+    color: $dark;
+    text-decoration: none;
+  }
 }
 
 .news-category ul li a {
@@ -440,7 +626,7 @@ ul.post-date li a {
 }
 
 .entry-title h4 a {
-  color: rgb(0, 0, 0);
+  color: $dark;
   font-weight: normal;
   font-size: 14px;
   text-decoration: none;
@@ -453,15 +639,15 @@ ul.entry-meta li {
   font-style: italic;
   font-size: 12px;
   margin-left: 60px;
-  color: rgb(153, 153, 153);
+  color: $gray;
 }
 
 .list-news {
-  border-bottom: 1px dashed rgb(229, 229, 229);
+  border-bottom: 1px dashed $white;
 }
 
 .entry-content.notopmargin {
-  border-bottom: 2px solid rgb(229, 229, 229);
+  border-bottom: 2px solid $white;
   margin-bottom: 50px;
   padding-bottom: 50px;
 }
@@ -476,7 +662,7 @@ ul.entry-meta li {
 .col-md-6.news-lienquan {
   margin-bottom: 20px;
   padding-bottom: 20px;
-  border-bottom: 1px dashed rgb(223, 221, 221);
+  border-bottom: 1px dashed $white;
 }
 
 .content-news {
