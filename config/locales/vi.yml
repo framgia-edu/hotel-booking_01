@@ -1,4 +1,7 @@
 vi:
+  time:
+    formats:
+      short: "%H:%M %d/%m/%Y"
   helpers:
     application_helper:
       text: "Book Hotel"
@@ -156,12 +159,34 @@ vi:
       create:
         success: "Hotel created"
         fail: "Something went wrong, we can create hotel for you"
+      edit:
+        not_found: "Không tìm thấy khách sạn"
       update:
         success: "Hotel updated"
         fail: "Something went wrong, your update can't be applied"
     images:
       image:
         confirm: "Are you sure?"
+    categories:
+      index:
+        page_header: "Categories management"
+        panel_heading: "Categories"
+      form:
+        submit: "Submit"
+        reset: "Reset"
+      category:
+        confirm: "Are you sure"
+      new:
+        header: "Add category"
+      create:
+        success: "Category created"
+      edit:
+        header: "Edit %{name}"
+        not_found: "Category not found"
+      update:
+        success: "Category updated"
+      destroy:
+        success: "Category deleted"    
   contacts:
     new:
       title: "Liên hệ"
