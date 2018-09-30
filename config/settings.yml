@@ -51,14 +51,9 @@ room_type_service:
 room_detail:
   arceage:
     min_length: 0
-header:
-  signup_link: "http://localhost:3000/signup"
-  login_link: "http://localhost:3000/login"
 layouts:
   header:
-    about: "http://localhost:3000/about"
     contact: "http://localhost:3000/contacts/new"
-    help: "http://localhost:3000/help"
   static_pages:
     home:
       min_price: 10000
