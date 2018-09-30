@@ -1,0 +1,32 @@
+<tr role="row">
+    <td>
+      <%= post.id %>
+    </td>
+    <td>
+      <%= post.title %>
+    </td>
+    <td title="<%= post.content %>" > 
+      <%= raw post.content.truncate(Settings.admin.post.limit_word.length, separator: " ", omision: Settings.admin.post.limit_word.omision) %>
+    </td>
+    <td>
+      <%= link_to post.category.name, admin_category_posts_path(post.category) %>
+    </td>
+    <td>
+      <%= post.user.name %>
+    </td>
+    <td>
+      <%= l post.created_at, format: :short %>
+    </td>
+    <td>
+      <%= l post.updated_at, format: :short %>
+    </td>
+    <td>
+      <%= link_to edit_admin_post_path(post), class: "btn btn-xs btn-outline btn-success" do %>
+      <i class="fa fa-pencil"></i>
+      <% end %>
+      <%= link_to admin_post_path(post), class: "btn btn-xs btn-outline btn-danger",
+          method: :delete, data:{confirm: t(".confirm")} do %>
+      <i class="fa fa-trash"></i>
+      <% end %>
+    </td>
+  </tr>

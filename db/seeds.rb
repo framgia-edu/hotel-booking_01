@@ -47,7 +47,7 @@ end
                               description: Faker::Lorem.paragraph
   10.times do 
     category.posts.create! title: Faker::Book.title,
-                           content: Faker::Lorem.paragraphs,
+                           content: Faker::Lorem.paragraph,
                            user_id: 1
   end 
 end

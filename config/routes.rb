@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  mount Ckeditor::Engine => "/ckeditor"
   root "static_pages#home"
   get "/home", to: "static_pages#home", as: :home
   get "/about", to: "static_pages#about", as: :about
@@ -13,6 +14,9 @@ Rails.application.routes.draw do
   namespace :admin do
     resources :hotels
     resources :images, only: :destroy
-    resources :categories
+    resources :posts, only: %i(index new create)
+    resources :categories do
+      resources :posts, shallow: true, except: :show
+    end
   end
 end

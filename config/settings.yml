@@ -62,3 +62,7 @@ layouts:
 admin:
   hotel:
     image_size: 100
+  post:
+    limit_word:
+      length: 50
+      omision: "..."
