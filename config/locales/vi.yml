@@ -16,6 +16,8 @@ vi:
         logout: "Đăng xuất"
         toggle_navigation: "Toggle navigation"
         hotel: "Khách sạn"
+        categories: "Danh mục bài viết"
+        posts: "Bài viết"
     header:
       hotel: "Khách sạn"
       about: "Tin tức"
@@ -171,6 +173,7 @@ vi:
       index:
         page_header: "Categories management"
         panel_heading: "Categories"
+        new: "Add category"
       form:
         submit: "Submit"
         reset: "Reset"
@@ -186,7 +189,25 @@ vi:
       update:
         success: "Category updated"
       destroy:
-        success: "Category deleted"    
+        success: "Category deleted"
+    posts:
+      form:
+        submit: "Submit"
+        reset: "Reset"
+      index:
+        page_header: "Bài viết"
+        panel_heading: "Danh sách bài viết"
+        new: "Thêm bài viết"
+      create:
+        success: "Tạo bài viết mới thành công"
+        fail: "Đã xảy ra lỗi. Không thể tạo bài viết"
+      update:
+        success: "Cập nhật bài viết thành công"
+        fail: "Đã xảy ra lỗi. Không thể cập nhật bài viết"
+      post:
+        confirm: "Bạn chắc chắn muốn xóa bài viết này?"
+      destroy:
+        success: "Xóa bài viết thành công"
   contacts:
     new:
       title: "Liên hệ"
