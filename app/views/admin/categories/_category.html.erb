@@ -18,7 +18,7 @@
     <%= l category.updated_at, format: :short %>
   </td>
   <td>
-    <%= link_to admin_category_path(category), class: "btn btn-xs btn-outline btn-primary" do %>
+    <%= link_to admin_category_posts_path(category), class: "btn btn-xs btn-outline btn-primary" do %>
       <i class="fa fa-eye"></i>
     <% end %>
     <%= link_to edit_admin_category_path(category), class: "btn btn-xs btn-outline btn-success" do %>
