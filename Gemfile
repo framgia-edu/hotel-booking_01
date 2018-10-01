@@ -6,6 +6,7 @@ ruby "2.5.1"
 gem "bcrypt", "~> 3.1", ">= 3.1.11"
 gem "bootsnap", ">= 1.1.0", require: false
 gem "bootstrap"
+gem "bootstrap4-kaminari-views"
 gem "bootstrap_sb_admin_base_v2"
 gem "carrierwave"
 gem "coffee-rails", "~> 4.2"

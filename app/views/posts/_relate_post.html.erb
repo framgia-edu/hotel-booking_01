@@ -1,0 +1,18 @@
+<div class="col-md-6 news-lienquan">
+  <div class="post-lienquan">
+    <div class="post-image">
+      <%= link_to image_tag("tintuc.jpg", class: "img-responsive"), post_path(relate_post) %>
+    </div>
+    <div class="post-title-lq">
+      <h4><%= link_to relate_post.title, post_path(relate_post) %></h4>
+    </div>
+    <ul class="post-date">
+      <li><i class="icon-calendar3"><%= l relate_post.created_at, format: :short %></i></li>
+      <li><i class="icon-user">/</i><%= relate_post.user_name %></li>
+    </ul>
+    <div class="post-content-lq">
+      <p><%= relate_post.content.truncate Settings.Post.truncate_word %></p>
+      <%= link_to t(".read_more"), post_path(relate_post) %>
+    </div>
+  </div>
+</div>

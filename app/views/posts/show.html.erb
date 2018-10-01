@@ -1,0 +1,28 @@
+<div class="content-news">
+  <div class="container">
+    <div class="new-title">
+      <div class="entry-content notopmargin">
+        <div class="post-title">
+          <h2><%= @post.title %></h2>
+        </div>
+        <ul class="post-date">
+          <li><i class="icon-calendar3"><%= l @post.created_at, format: :short %></i></li>
+          <li><i class="icon-user"></i>
+        </ul>
+        <div class="text-conent">
+          <%= @post.content %>
+        </div>
+        <div class="nguontin" style="text-align: right;">
+          <strong><%= @post.user_name %></strong>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="entry-content lienquan">
+        <h3><%= t ".relate_posts" %></h3>
+        <div class="row">
+          <%= render partial: "relate_post", collection: @relate_posts %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
