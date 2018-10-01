@@ -1,0 +1,15 @@
+<% provide :title, t(".title") %>
+
+<div class="tintuc-content">
+  <div class="content-news">
+    <div class="container">
+      <h1 class="titlepage"><%= t ".title" %></h1>
+      <div class="new-title">
+        <div class="entry-content notopmargin">
+          <%= render @posts %>
+        </div>
+        <%= paginate @posts, theme: "twitter-bootstrap-4" %>
+      </div>
+    </div>
+  </div>
+</div>

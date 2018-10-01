@@ -62,3 +62,7 @@ layouts:
 admin:
   hotel:
     image_size: 100
+posts_controller:
+  per_page: 10
+Post:
+  truncate_word: 100

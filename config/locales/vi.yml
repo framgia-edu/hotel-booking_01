@@ -131,7 +131,9 @@ vi:
       next: "Next"
   controllers:
     users_controller:
-      don't_find: "không tìm thấy"
+      don't_find: "Không tìm thấy"
+    posts_controller:
+      not_found: "Không tìm thấy"
   admin:
     shared:
       error_messages:
@@ -206,3 +208,12 @@ vi:
     create:
       create_success: "Cảm ơn nhận xét của bạn"
       create_false: "Lỗi rồi :("
+  posts:
+    index:
+      title: "Tin tức"
+    show:
+      relate_posts: "Bài viết liên quan"
+    post:
+      read_more: "Đọc tiếp"
+    relate_post:
+      read_more: "Đọc tiếp"
