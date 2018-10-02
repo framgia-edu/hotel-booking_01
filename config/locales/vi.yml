@@ -104,6 +104,9 @@ vi:
       remember_login: "Ghi nhớ đăng nhập"
       login: "Đăng nhập"
       register_now: "Bạn không có tài khoản? Đăng kí ngay"
+    create:
+      login_success: "Đăng nhập thành công"
+      login_false: "Đăng nhập thất bại"
   hotels:
     index:
       title: "Khách Sạn"
