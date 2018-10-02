@@ -19,7 +19,7 @@
         <%= t ".title-search" %>
       </p>
       <div class="col-md-8">
-        <%= text_field_tag "search", nil, placeholde: t(".input_hotel") %>
+        <%= text_field_tag :search, params[:search], class: "form-control", placeholder: t(".input_hotel") %>
       </div>
       <div class="col-md-2">
         <%= text_field_tag "received", nil, data: {datetimepicker: "true"}, placeholder: t(".received_date") %>
@@ -32,7 +32,9 @@
           <%= submit_tag t(".get_location"), class: "btn btn-primary" %>
       </div>
       <div class="col-md-2">
-          <%= submit_tag t(".search"), class: "btn btn-primary" %>
+        <span class="input-group-btn">
+          <%= submit_tag t(".search"),:name => nil, type:"submit", class: "btn btn-primary" %>
+        </span>
       </div>
     </div>
     <% end %>

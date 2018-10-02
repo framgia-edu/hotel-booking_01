@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="media">
+    <div class="col-md-3 mb-5">
+      <%= image_tag "ks.jpg", class: "mr-3" %>
+    </div>
+    <div class="media-body">
+      <div class="row">
+        <div class="col-md-8">
+          <h5 class="mt-0"><%= @hotel.name %></h5>
+          <%= @hotel.address %>  <br>
+          <%= image_tag "wifi.png" %><br>
+          <%= image_tag "p.png" %><br>
+          <%= image_tag "restaurant.png" %>
+        </div>
+        <div class="col-md-4">
+          <p class="mt-3">
+            <%= t ".one_night_price", 
+              price: @hotel.room_details.first.room_type_services.first.price %>
+          </p>
+          <h5 class="mt-3">
+            <%= t ".room-space" %><%= @hotel.room_details.first.room_number %></h5>
+          <button type="button" class="btn btn-primary">
+            <%= t ".button-order" %>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

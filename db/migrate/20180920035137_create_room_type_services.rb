@@ -3,7 +3,7 @@ class CreateRoomTypeServices < ActiveRecord::Migration[5.2]
     create_table :room_type_services do |t|
       t.integer :priceable_id
       t.string :priceable_type
-      t.text :desciption
+      t.text :description
       t.string :name
       t.float :price
 

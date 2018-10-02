@@ -106,7 +106,7 @@ ActiveRecord::Schema.define(version: 2018_09_20_035137) do
   create_table "room_type_services", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.integer "priceable_id"
     t.string "priceable_type"
-    t.text "desciption"
+    t.text "description"
     t.string "name"
     t.float "price"
     t.datetime "created_at", null: false
